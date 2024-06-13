@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="./12Junetask.js"></script> -->
+  </head>
+  <body>
+    <script>
+      //Write a JavaScript function that takes two numbers and an operator ('+', '-', '*', '/') as arguments and returns the result of the arithmetic operation.
+
+      calculator = (a, b, operator) => {
+        a = +prompt("Enter a:");
+        b = +prompt("Enter b:");
+        operator = prompt("Enter operator:");
+        return operator === "+"
+          ? a + b
+          : operator === "-"
+          ? a - b
+          : operator === "*"
+          ? a * b
+          : operator === "/"
+          ? a / b
+          : "operator is N/A";
+      };
+      console.log(calculator());
+
+      // Write a JavaScript function that takes a number as a argument and returns it's square value
+
+      function square(number) {
+        number = +prompt("Enter a number:");
+        return number * number;
+      }
+      console.log(square());
+
+
+      //Write a JavaScript function that takes two numbers as a arguments and returns the highest(max ) of the number using terinary operator inside a function
+
+      function highest(u, v) {
+        u = +prompt("Enter a number:");
+        v = +prompt("Enter another number:");
+        return u > v ? u : v;
+      }
+      console.log(highest());
+
+      //Write a javascript function which takes three arguments  (amount , rate of interest, no of years ) returns the total value of interest
+
+      function interest(p, r, t) {
+        p = +prompt("Enter Principal amount:");
+        r = +prompt("Enter Interest rate");
+        t = +prompt("Enter Time");
+        return (p * r * t) / 100;
+      }
+      console.log(interest());
+    </script>
+  </body>
+</html>
