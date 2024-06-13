@@ -146,6 +146,7 @@ for (var i = 0; i > 5; i++) {
 for (var i = 5; i <= 0; i--) {
   console.log(i);
 }
+//condition will become false, so interpreter will not go into the for loop
 
 //17. What will be the output of this code:
 
@@ -184,4 +185,4 @@ for (var i = 0; i < 5; i++) {
   if (i === 1) return;
   console.log(i);
 }
-0
+//0
